@@ -1,4 +1,0 @@
-[submodule "base-theme"]
-	path = base-theme
-	url = https://github.com/misitebao/static-theme-misitebao.git
-	branch = main
