@@ -3,5 +3,5 @@ languageCode = "en"
 defaultContentLanguage = "en"
 
 title = "My New Hugo Site"
-themesdir = "../.."
+themesdir = "../../"
 theme = "hugo-theme-misilog"
