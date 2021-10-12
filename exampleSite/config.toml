@@ -1,0 +1,7 @@
+baseURL = "/"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+title = "My New Hugo Site"
+themesdir = "../.."
+theme = "hugo-theme-misitebao"
