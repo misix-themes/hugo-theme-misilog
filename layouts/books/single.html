@@ -7,6 +7,8 @@
     <h5 class="post-title">下一页{{ .Prev }}</h5>
     <h5 class="post-title">字数{{ .WordCount }}</h5>
     <h5 class="post-title">阅读时间{{ .ReadingTime }}</h5>
+    <h5 class="post-title">阅读时间{{ .Dir }}</h5>
+    <h5 class="post-title">阅读时间{{ if .IsTranslated }} 666 {{end}}</h5>
     <div>
       {{with .PrevInSection}}
       <a href="{{.Permalink}}">前一页</a> 
