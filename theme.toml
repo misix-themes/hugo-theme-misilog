@@ -6,13 +6,8 @@ license = "MIT"
 licenselink = "https://github.com/misitebao/hugo-theme-misilog/blob/master/LICENSE"
 description = "A clean, elegant but advanced blog theme for Hugo"
 homepage = "http://hugo-theme-misilog.misitebao.com"
-<<<<<<< HEAD
 tags = ["hugo", "theme", "misitebao", "misilog"]
 features = ["multilingual", "SEO Optimized"]
-=======
-tags = ["hugo","theme","misitebao"]
-features = []
->>>>>>> a8114f061b9fce073db23d77cc3351b2e26883d5
 min_version = "0.41.0"
 
 [author]
