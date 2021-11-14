@@ -1,0 +1,15 @@
+<div class="iqiyi">
+  {{- if .IsNamedParams -}}
+  <iframe
+    src="https://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid={{ .Get `id` }}&tvId=1977840169290600&accessToken=2.ef9c39d6c7f1d5b44768e38e5243157d&appKey=8c634248790d4343bcae1f66129c1010&appId=1368&height=100%&width=100%"
+    frameborder="0"
+    allowfullscreen="true"
+  ></iframe>
+  {{- else -}}
+  <iframe
+    src="https://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid={{ .Get 0 }}&tvId=1977840169290600&accessToken=2.ef9c39d6c7f1d5b44768e38e5243157d&appKey=8c634248790d4343bcae1f66129c1010&appId=1368&height=100%&width=100%"
+    frameborder="0"
+    allowfullscreen="true"
+  ></iframe>
+  {{- end -}}
+</div>
