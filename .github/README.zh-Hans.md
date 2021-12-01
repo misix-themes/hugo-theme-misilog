@@ -1,3 +1,5 @@
+# Hugo Theme Misilog
+
 <!-- <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/misitebao/standard-repository@main/logo.gif" height="300" />
 </p> -->
