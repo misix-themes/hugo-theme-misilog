@@ -50,13 +50,13 @@
 
 ## Introductions
 
-This project is a blog site theme suitable for Hugo.
+This project is a blog site theme suitable for [Hugo](https://gohugo.io/).
 
 <span id="nav-3-1"></span>
 
 ### Official Website
 
-[Theme documentation site](hugo-theme-misilog.vercel.app)
+[Theme documentation site](https://hugo-theme-misilog.vercel.app)
 
 <span id="nav-3-2"></span>
 

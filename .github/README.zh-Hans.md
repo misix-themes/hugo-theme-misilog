@@ -50,13 +50,13 @@
 
 ## 项目介绍
 
-本项目是一个适用于 Hugo 的博客网站主题。
+本项目是一个适用于 [Hugo](https://gohugo.io/) 的博客网站主题。
 
 <span id="nav-3-1"></span>
 
 ### 官方网站
 
-[主题文档站点](hugo-theme-misilog.vercel.app)
+[主题文档站点](https://hugo-theme-misilog.vercel.app)
 
 <span id="nav-3-2"></span>
 
