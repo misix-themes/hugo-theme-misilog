@@ -1,12 +1,12 @@
 {{ define "main" }}
 <article>
   <header>
-    <h1 class="post-title">{{ .Title }}</h1>
-    <h5 class="post-title">日期{{ .Date }}</h5>
-    <h5 class="post-title">上一页{{ .Next }}</h5>
-    <h5 class="post-title">下一页{{ .Prev }}</h5>
-    <h5 class="post-title">字数{{ .WordCount }}</h5>
-    <h5 class="post-title">阅读时间{{ .ReadingTime }}</h5>
+    <span class="post-title">{{ .Title }}</span>
+    <span class="post-title">日期{{ .Date }}</span>
+    <span class="post-title">上一页{{ .Next }}</span>
+    <span class="post-title">下一页{{ .Prev }}</span>
+    <span class="post-title">字数{{ .WordCount }}</span>
+    <span class="post-title">阅读时间{{ .ReadingTime }}</span>
     <div>
       {{with .PrevInSection}}
       <a href="{{.Permalink}}">前一页</a> 

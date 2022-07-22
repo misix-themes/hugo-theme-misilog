@@ -1,24 +1,29 @@
 {{ define "main"}}
+<div class="main">
+  <h2>书籍</h2>
+  {{ range where .Site.RegularPages "Section" "books" }}
+  <div>
+    <a href="{{.Permalink}}">{{.Title}}</a>
+  </div>
+  {{ end }}
 
-<h2>新闻列表</h2>
-{{ range where .Site.RegularPages "Section" "news" }}
-<div>
-  <a href="{{.Permalink}}">{{.Title}}-{{ .Type}}-{{ .Section }}</a>
+  <h2>博文列表</h2>
+  {{ range where .Site.RegularPages "Section" "posts" }}
+  <div>
+    <a href="{{.Permalink}}">{{.Title}}</a>
+  </div>
+  {{ end }}
+
+ 
+
+  <h2>所有的文章列表</h2>
+  {{ range .Site.RegularPages }}
+  <div>
+    <a href="{{.Permalink}}">{{.Title}}</a>
+  </div>
+  {{ end }}
+
+
+  {{ .Content }}
 </div>
-{{ end }}
-
-<h2>博文列表</h2>
-{{ range where .Site.RegularPages "Section" "posts" }}
-<div>
-  <a href="{{.Permalink}}">{{.Title}}-{{ .Type}}-{{ .Section }}</a>
-</div>
-{{ end }}
-
-<h2>所有的文章列表</h2>
-{{ range .Site.RegularPages }}
-<div>
-  <a href="{{.Permalink}}">{{.Title}}-{{ .Type}}-{{ .Section }}</a>
-</div>
-{{ end }}
-
 {{ end }}

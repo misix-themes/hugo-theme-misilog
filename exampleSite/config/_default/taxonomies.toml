@@ -1,0 +1,5 @@
+# 定义文件分类方式术语
+category = 'categories' #类别
+tag = 'tags'            #标签
+pubtype = 'pubtypes'    #发布类型
+series = "series"       #系列

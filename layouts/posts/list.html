@@ -1,4 +1,5 @@
 {{ define "main" }}
+list adadad
 <main>
     <article>
         <header>
@@ -8,13 +9,14 @@
     </article>
     <ul>
     <!-- 遍历content/posts/*.md -->
-    {{ range .Pages }}
+    {{ range .Paginator.Pages }}
         <li>
             <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
         </li>
     {{ end }}
     </ul>
+分页
+    {{ template "_internal/pagination.html" . }}
 
-    
 </main>
 {{ end }}

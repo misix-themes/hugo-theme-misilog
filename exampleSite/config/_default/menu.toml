@@ -1,0 +1,26 @@
+
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+[[main]]
+name = "Posts"
+url = "/posts"
+weight = 2
+[[main]]
+name = "News"
+url = "/news"
+weight = 3
+[[main]]
+name = "Categories"
+url = "/categories"
+weight = 4
+[[main]]
+name = "Tags"
+url = "/tags"
+weight = 5
+[[main]]
+name = "Pubtypes"
+url = "/pubtypes"
+weight = 6
+

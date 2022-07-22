@@ -1,34 +1,33 @@
-
-
-
-
-
-{{ if .IsTranslated }}
-<h4>{{ i18n "translations" }}lll</h4>
-<ul>
-    {{ range .Translations }}
-    <li>
-        <a href="{{ .Permalink }}">{{ .Lang }}{{ .Language.LanguageName }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
-    </li>
-    {{ end }}
-</ul>
-{{ else}}
-{{ .Language.LanguageName }}--{{ .Language.Lang }}{{ .Site.Language }}--{{ .Site.LanguageCode }}
-
-{{ end }}
-
-
+<div class="header">
+菜单列表示例：
 <ul>
   {{ range .Site.Menus.main }} {{if .HasChildren}}
   <li>{{.Name}}</li>
   <ul>
+    {{ if .HasChildren }}
     {{ range .Children }}
     <li>
       <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
     </li>
+    {{ end }}
     {{ end }}
   </ul>
   {{ else }}
   <li><a href="{{ .URL | absLangURL }}">{{.Name}}</a></li>
   {{end}} {{ end }}
 </ul>
+
+
+{{ if .IsTranslated }}
+如果此页面支持多语言就显示
+<ul>
+  {{ range .Translations }}
+  <li>
+    <a href="{{ .Permalink }}">
+      {{ .Language.LanguageName }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+{{ end }}
+</div>

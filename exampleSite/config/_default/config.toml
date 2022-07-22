@@ -1,0 +1,40 @@
+# 基础配置
+baseURL = "/"                          #根路径
+defaultContentLanguage = "en"          #默认内容语言
+defaultContentLanguageInSubdir = false
+hasCJKLanguage = true
+
+title = "My New Hugo Site"   #网站标题
+themesdir = "../../"         #主题路径
+theme = "hugo-theme-misilog" #主题名称
+
+disablePathToLower = true #禁止将URL路径转为小写
+paginate = 2              #分页
+
+
+# Hugo 解析文档的配置
+[markup]
+  # 语法高亮设置
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNos = true
+  lineNumbersInTable = true
+  noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+    [markup.goldmark.renderer]
+    # 是否在文档中直接使用 HTML 标签
+    unsafe = true
+
+# 目录设置
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3

@@ -1,0 +1,25 @@
+
+[[main]]
+name = "主页"
+url = "/"
+weight = 1
+[[main]]
+name = "博文"
+url = "/posts"
+weight = 2
+[[main]]
+name = "新闻"
+url = "/news"
+weight = 3
+[[main]]
+name = "分类"
+url = "/categories"
+weight = 4
+[[main]]
+name = "标签"
+url = "/tags"
+weight = 5
+[[main]]
+name = "类型"
+url = "/pubtypes"
+weight = 6
